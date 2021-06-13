@@ -22,13 +22,21 @@ function palyginimas() {
     console.log("MAX pradinis: " + a);
 
     if (b > max && b >= c) {
-        max = b;        
+        max = b;  
+        console.log("if1 Max: " + max);
+        document.getElementById("bigger").value = max;      
     } else { if (c >= max && c > b) {
-        max = c;        
+        max = c;    
+        console.log("if2 Max: " + max);
+        document.getElementById("bigger").value = max;    
     } else { if (a == b && b == c) {
-        max = ("Skaičiai vienodi");        
+        max = ("Skaičiai vienodi");    
+        console.log("if3 Max: " + max);
+        document.getElementById("bigger").value = max;    
     } else {
         max = max;
+        console.log("if4 Max: " + max);
+        document.getElementById("bigger").value = max;
     } 
     } 
     }
