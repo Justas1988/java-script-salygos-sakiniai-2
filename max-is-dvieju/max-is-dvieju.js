@@ -12,8 +12,8 @@
 let a, b, max;
 
 function palyginimas() {
-    a = document.getElementById("first").value;
-    b = document.getElementById("second").value;
+    a = parseFloat(document.getElementById("first").value);
+    b = parseFloat(document.getElementById("second").value);
     console.log("Reikšmė A: " + a + " Reikšmė B: " + b);
 
     max = a;
