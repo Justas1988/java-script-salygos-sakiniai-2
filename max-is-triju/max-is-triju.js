@@ -34,14 +34,12 @@ function palyginimas() {
         console.log("if3 Max: " + max);
         document.getElementById("bigger").value = max;    
     } else {
-        max = max;
+        max = a;
         console.log("if4 Max: " + max);
         document.getElementById("bigger").value = max;
     } 
     } 
     }
-    console.log("Max: " + max);
-    document.getElementById("bigger").value = max;
 
      if (((a+b) > c) && ((a+c) > b) && ((b+c) > a)) { //neveikia, nežinau kodėl
          document.getElementById("triangle").value = "Trikampį sudaryti galima";
