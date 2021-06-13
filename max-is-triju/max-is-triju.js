@@ -21,7 +21,7 @@ function palyginimas() {
     let max = a;
     console.log("MAX pradinis: " + a);
 
-    if (b > max && b >= c) {  //veikia jei skaičiai iš tiek pat skaitmenų????
+    if (b > max && b >= c) {  
         max = b;  
         console.log("if1 Max: " + max);
         document.getElementById("bigger").value = max;      
@@ -40,7 +40,7 @@ function palyginimas() {
     } 
     }
 
-     if (a+b > c && a+c > b && b+c > a) { //neveikia, nežinau kodėl
+     if (a+b > c && a+c > b && b+c > a) { 
          document.getElementById("triangle").value = "Trikampį sudaryti galima";
      } else {
         document.getElementById("triangle").value = "Trikampio sudaryti negalima";
