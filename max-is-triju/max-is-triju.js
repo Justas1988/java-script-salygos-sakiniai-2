@@ -9,15 +9,16 @@
 
 "use strict"
 
-let a, b, c, max;
+
 
 function palyginimas() {
-    a = document.getElementById("first").value;
-    b = document.getElementById("second").value;
-    c = document.getElementById("third").value;
+
+    let a = document.getElementById("first").value;
+    let b = document.getElementById("second").value;
+    let c = document.getElementById("third").value;
     console.log("Reikšmė A: " + a + " Reikšmė B: " + b + " Reikšmė C: " + c);
 
-    max = a;
+    let max = a;
     console.log("MAX pradinis: " + a);
 
     if (b > max && b >= c) {
@@ -29,17 +30,17 @@ function palyginimas() {
     } else {
         max = max;
     } 
-} 
-}
+    } 
+    }
+    console.log("Max: " + max);
+    document.getElementById("bigger").value = max;
+
      if (((a+b) > c) && ((a+c) > b) && ((b+c) > a)) {
-         document.getElementById("triangle").value = "Trikampį sudaryti galima"
+         document.getElementById("triangle").value = "Trikampį sudaryti galima";
      } else {
-        document.getElementById("triangle").value = "Trikampio sudaryti negalima"
+        document.getElementById("triangle").value = "Trikampio sudaryti negalima";
      }
     
-    document.getElementById("bigger").value = max;
-    console.log("Max: " + max);
-    console.log("Reikšmė A: " + a + " Reikšmė B: " + b + " Reikšmė C: " + c);
 
 
 }
