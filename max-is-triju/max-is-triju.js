@@ -39,13 +39,15 @@ function palyginimas() {
     } 
     } 
     }
-
-     if (a+b > c && a+c > b && b+c > a) { 
-         document.getElementById("triangle").value = "Trikampį sudaryti galima";
-     } else {
-        document.getElementById("triangle").value = "Trikampio sudaryti negalima";
+    
+    if (a <= 0 || b <= 0 || c <= 0) {
+        document.getElementById("triangle").value = "Kraštinių ilgiai turi būti didensi už 0";
+    } else { if (a+b > c && a+c > b && b+c > a) { 
+        document.getElementById("triangle").value = "Trikampį sudaryti galima";
+    } else {
+       document.getElementById("triangle").value = "Trikampio sudaryti negalima";
      }
     
-
+    }
 
 }
